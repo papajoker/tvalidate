@@ -1,0 +1,27 @@
+{
+    "name": "papajoke/tvalidate",
+    "type": "phpbb-extension",
+    "description": "validate/disable topic",
+    "homepage": "",
+    "version": "0.9.0",
+    "time": "2017-09-28",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "papajoke",
+            "email": "papajoke@manjaro.fr",
+            "homepage": "",
+            "role": ""
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "tvalidate",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.4,<3.2.0@dev"
+        }
+    }
+}

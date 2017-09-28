@@ -1,0 +1,9 @@
+services:
+    papajoke.tvalidate.listener:
+        class: papajoke\tvalidate\event\main_listener
+        arguments:
+            - '@user'
+            - '@template'
+            - '@dbal.conn'
+        tags:
+            - { name: event.listener }

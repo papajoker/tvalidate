@@ -1,0 +1,7 @@
+{% if postrow.S_FIRST_ROW and TOPIC_POSTER == USER_ID_VISIT %}
+    <form id="set_validate" action="./posting.php" method="post" style="display:none;">
+        {{ S_FORM_TOKEN }}
+        <input name="p" value="{{ TOPIC_FIRST_POST }}" type="hidden" /><input name="t" value="{{ TOPIC_ID }}" type="hidden" /><input name="f" value="{{ FORUM_ID }}" type="hidden" />
+        <input name="mode" value="validate" type="hidden"/>
+    </form>
+{% endif %} 

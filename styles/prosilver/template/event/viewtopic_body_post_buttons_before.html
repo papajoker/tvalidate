@@ -1,0 +1,7 @@
+{% if postrow.U_EDIT and postrow.S_TOPIC_POSTER and TOPIC_POSTER == USER_ID_VISIT %}
+    <li>
+        <a href="javascript:$('#set_validate').submit()" title="mettre en{% if TOPIC_RESOLVED %} non{% else %}{% endif %} résolu" class="button button-icon-only">
+            <i class="icon fa-{% if not TOPIC_RESOLVED %}check{% else %}chain-broken{% endif %} fa-fw" aria-hidden="true"></i>
+        </a>
+    </li>
+{% endif %} 
